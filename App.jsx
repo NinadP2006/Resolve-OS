@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Activity, AlertTriangle, ArrowUpRight, Bell, BookOpen, Bot, Boxes, CheckCircle2, ChevronRight, CircleHelp, Clock3, Command, FileText, Gauge, LayoutDashboard, ListFilter, Menu, MoreHorizontal, Plus, Search, Settings, ShieldCheck, Sparkles, Ticket, Users, Wand2, X } from 'lucide-react';
-import * as api from './utils/api';
+import * as api from './api';
 
 const BASE = import.meta.env.VITE_API_URL || '/api';
 const lifecycle = { PENDING:'New', INTAKE:'New', TRIAGED:'Assigned', INVESTIGATING:'In Progress', REPRODUCED:'In Progress', FIXING:'In Progress', VALIDATING:'In Progress', PR_OPEN:'Waiting', AI_REVIEW:'Waiting', HUMAN_REVIEW:'Waiting', MERGED:'Resolved', REJECTED:'Closed', BLOCKED:'Waiting' };
